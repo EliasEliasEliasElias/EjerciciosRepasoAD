@@ -15,15 +15,15 @@ public class Ejercicio5 {
 
     private static void b() throws Exception {
 
-        //throw new Exception("Excepcion B");
+        //throw new Exception("Excepcñion B");
 
         try {
             c();
 
         } catch (Exception e) {
             System.out.println("Se ha lanzado una excepcion en C");
+            throw new Exception("Excepcion B");
         }
-        throw new Exception("Excepcion B");
     }
 
     private static void c() throws Exception {
